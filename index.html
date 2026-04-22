@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseFit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/images/dumbell.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-black cursor-default">
+
+    <nav class="flex justify-around items-center gap-10 h-16 border border-b-[1px] border-gray-500 sticky top-0 bg-black/90 bg-blend-darken">
+      <!-- LOGO -->
+      <div class="">
+        <img src="/images/heartbeat.png" alt="" class="h-12">
+      </div>
+
+      <!-- NAVIGATIONS -->
+      <div class="flex gap-16 text-white text-xl">
+        <a href="" class="hover:text-[#FF0099]">Home</a>
+        <a href="" class="hover:text-[#FF0099]">Features</a>
+        <a href="" class="hover:text-[#FF0099]">Pricing</a>
+        <a href="" class="hover:text-[#FF0099]">Community</a>
+      </div>
+
+      <!-- BUTTON -->
+       <div class="space-x-5">
+        <button class="px-8 py-2 text-white rounded-full border border-white hover:bg-orange-700 hover:border-none">
+            Login
+        </button>
+
+        <button class="px-10 py-2 bg-[#1E90FF] rounded-full text-white hover:bg-sky-700">
+            Get Started
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class=" h-[90vh] pt-40 pl-12 bg-[url(/images/gym.jpg)] w-full bg-cover bg-center bg-black/50 bg-blend-darken">
+
+        <div class="">
+            <h1 class="text-6xl text-white font-bold pb-3">
+                Train Smarter. Not Harder.
+            </h1>
+            <h1 class="text-2xl text-white pb-16">
+                AI-Powered workouts tailored to your goals
+            </h1>
+            <button class="px-12 py-3 text-2xl text-white rounded-full border border-white mr-5 hover:bg-sky-700 hover:shadow-lg hover:shadow-blue-500/50 hover:border-none">
+                Start for Free
+            </button>
+            <button class="px-12 py-3 text-2xl text-white rounded-full bg-orange-700 shadow-lg hover:shadow-orange-700/50 ">
+                Watch Demo
+            </button>
+            
+        </div>
+
+
+    </section>
+
+    <!-- FEATURE SECTION -->
+            <h1 class="text-4xl text-white text-center mt-5 font-bold">
+                Featured Section
+            </h1>
+
+    <section class="grid grid-cols-3 px-10 mt-12 mb-24 gap-5 h-[25vh] ">
+
+        <!-- CARD 1 -->
+        <div class="border border-gray-300 rounded-xl flex items-center p-3 gap-4 cursor-pointer hover:transition-all hover:scale-[1.07] shadow-xl hover:shadow-green-900/50">
+            <div>
+                <img src="/images/dumbell.png" alt="" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-white text-3xl font-bold">
+                AI Workouts
+                </h1>
+                <p class="text-white text-xl">
+                    Custom Routines generates instantly.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2  -->
+        <div class="border border-gray-300 rounded-xl flex items-center p-3 gap-4 cursor-pointer hover:transition-all hover:scale-[1.07] shadow-xl hover:shadow-blue-500/50">
+            <div>
+                <img src="/images/growth.png" alt="" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-white text-3xl font-bold">
+                    Progress Tracing
+                </h1>
+                <p class="text-white text-xl">
+                    Visual stats and performance insights.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="border border-gray-300 rounded-xl flex items-center p-3 gap-4 cursor-pointer hover:transition-all hover:scale-[1.07] shadow-xl hover:shadow-orange-500/50">
+            <div>
+                <img src="/images/connection.png" alt="" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-white text-3xl font-bold">
+                    Community
+                </h1>
+                <p class="text-white text-xl">
+                    Compete on global leaderboards
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LEADERBOARD SECTION -->
+     <h1 class="text-4xl text-white text-center mt-5 font-bold">
+        Leaderboards
+     </h1>
+    <section class="h-screen m-12 ">
+
+        <div class="mt-2 grid grid-cols-1 w-[15%] pb-24 palce-items-center">
+            <select id="leaderboard" name="Leaderboard" autocomplete="leaderboard-time" class="col-start-1 row-start-1  appearance-none rounded-md bg-white/5 py-3 pr-5 pl-3 *:text-2xl text-white *:bg-gray-900 sm:text-sm/6">
+              <option>All Time</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+            </select>
+         </div>
+
+        <div>
+            <table class="text-white w-full text-2xl">
+                    <tr class="text-left text-3xl">
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Points</th>
+                    </tr>
+
+
+                <tr class="hover:bg-gray-900">
+                    <td>1</td>
+                    <td style="font-family: Tapestry;">xo-rozzy</td>
+                    <td>2020pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>2</td>
+                    <td style="font-family: Tapestry;">Samilex</td>
+                    <td>2000pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>3</td>
+                    <td style="font-family: Tapestry;">Doomhound</td>
+                    <td>1930pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>4</td>
+                    <td style="font-family: Tapestry;">titanhound</td>
+                    <td>1912pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>5</td>
+                    <td style="font-family: Tapestry;">Mikky</td>
+                    <td>1901pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>6</td>
+                    <td style="font-family: Tapestry;">I Z R O T H</td>
+                    <td>1889pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>7</td>
+                    <td style="font-family: Tapestry;">Fang</td>
+                    <td>1860pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>8</td>
+                    <td style="font-family: Tapestry;">Mike</td>
+                    <td>1832pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>9</td>
+                    <td style="font-family: Tapestry;">Aang</td>
+                    <td>1826pts</td>
+                </tr>
+                <tr class="hover:bg-gray-900">
+                    <td>10</td>
+                    <td style="font-family: Tapestry;">Azrael</td>
+                    <td>1817pts</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+
+    <!-- PRICING SECTION -->
+     <h1 class="text-4xl text-white text-center font-bold">
+        Membership Plan
+     </h1>
+    <section class="grid grid-cols-3 w-full h-[150vh] place-items-center">
+        <!-- BASIC -->
+        <div class="h-[35rem] rounded-xl flex flex-col text-white p-5 border border-gray-500 shadow-lg shadow-green-500">
+            <h1 class="text-2xl pb-5">
+                Basic (Free)
+            </h1>
+            <h2 class="text-4xl font-bold">
+                <span class="text-2xl font-normal">$</span>
+                2.99
+                <span class="text-2xl font-normal"> /month</span>
+            </h2>
+            <p class="text-sm text-gray-500">
+                Billed annually ($4.99 if billed monthly)
+            </p>
+
+               <!-- FEATURES LIST -->
+
+            <p class="text-xl pt-5">
+                <span class="text-green-500 font-bold">
+                    ✓
+                </span> 
+                Access to basic workouts
+            </p>
+            <p class="text-xl pt-5">
+                <span class="text-green-500 font-bold">
+                    ✓
+                </span> 
+                Limited AI workout generation
+            </p>
+            <p class="text-xl pt-5">
+                <span class="text-green-500 font-bold">
+                    ✓
+                </span> 
+                Manual progress tracking
+            </p>
+            <p class="text-xl pt-5">
+                <span class="text-green-500 font-bold">
+                    ✓
+                </span> 
+                Basic leaderboard access
+            </p>
+            <p class="text-xl pt-5">
+                <span class="text-green-500 font-bold">
+                    ✓
+                </span> 
+                Community access (view only)
+            </p>
+            <p class="text-xl pt-5">
+                <span class="text-green-500 font-bold">
+                    ✓
+                </span> 
+                No custom plans
+            </p>
+
+            <button class="px-10 py-4 bg-green-500/50 hover:bg-green-800/70 text-white cursor-pointer rounded-lg text-xl mt-12">
+                Get Started
+            </button>
+
+            
+
+        </div>
+
+        <!-- PRO -->
+         <div class="h-[42rem] rounded-xl flex flex-col text-white p-10 border border-gray-500  shadow-xl shadow-blue-500 ">
+            <h1 class="text-2xl pb-5">
+                PRO
+            </h1>
+            <h2 class="text-4xl font-bold">
+                <span class="text-2xl font-normal">$</span>
+                99.9
+                <span class="text-2xl font-normal"> /month</span>
+            </h2>
+            <p class="text-sm text-gray-500">
+                Billed annually ($14.99 if billed monthly)
+            </p>
+
+
+           <!-- FEATURES LIST -->
+
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Access to basic workouts
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Unlimited AI workout generation
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Personalized workout plans
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Advanced progress tracking
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Community interactions
+            </p>
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Save favorite workouts
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-blue-500 font-bold">
+                    ✓
+                </span> 
+                Weekly performance insight
+            </p>
+
+            <button class="px-10 py-4 bg-blue-500/50 hover:bg-blue-800/70 text-white rounded-lg text-xl mt-12">
+                Get Started
+            </button>
+
+         </div>
+
+         <!-- ELITE -->
+          <div class="h-[35rem] rounded-xl  flex flex-col text-white p-5 border border-gray-500 shadow-lg shadow-orange-500">
+            <h1 class="text-2xl pb-5">
+                Elite
+            </h1>
+            <h2 class="text-4xl font-bold">
+                <span class="text-2xl font-normal">$</span>
+                499
+                <span class="text-2xl font-normal"> /month</span>
+            </h2>
+            <p class="text-sm text-gray-500">
+                One time payment
+            </p>
+
+               <!-- FEATURES LIST -->
+            <p class="text-xl pt-5">
+                <span class="text-orange-500 font-bold">
+                    ✓
+                </span> 
+                Everything in Pro
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-orange-500 font-bold">
+                    ✓
+                </span> 
+                AI coach recommendations
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-orange-500 font-bold">
+                    ✓
+                </span> 
+               Custom diet + nutrition plans
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-orange-500 font-bold">
+                    ✓
+                </span> 
+                Early access to new features
+            </p>           
+            <p class="text-xl pt-5">
+                <span class="text-orange-500 font-bold">
+                    ✓
+                </span> 
+                Priority Support
+            </p>            
+            <p class="text-xl pt-5">
+                <span class="text-orange-500 font-bold">
+                    ✓
+                </span> 
+                Advanced analytics dashboard
+            </p>
+
+            <button class="px-10 py-4 bg-orange-500/50 hover:bg-orange-800/70 text-white rounded-lg text-xl mt-12">
+                Go Elite
+            </button>
+
+          </div>
+    </section>
+
+
+    <!-- NEWSLETTER SECTION -->
+    <section class= "justify-center flex mb-20">
+         <div class="border border-gray-300 rounded-xl flex items-center px-10 py-5 gap-4 w-[55%] h-[35%] shadow-lg shadow-blue-500">
+            <div class="w-full">
+                <h1 class="text-white text-3xl font-bold">
+                Join 10,000+ athletes leveling up
+                </h1>
+
+                <div class="flex flex-col py-5 ">
+                <form action="" class="w-full flex gap-6 justify-center items-center text-back">
+                    <input type="email" placeholder="Enter your E-mail" class="rounded-lg py-2 w-full px-2 " >
+                    <input type="submit" placeholder="Enter your email" class="rounded-lg text-lg py-2 px-5 bg-blue-500/50 cursor-pointer my-5 text-white font-semibold">
+                </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="text-white h-24 flex justify-between items-center px-12 border-t-[1px] border-gray-500">
+
+        <div class="flex gap-10 text-xl">
+            <a href="" class="hover:text-blue-500/50">About</a>
+            <a href="" class="hover:text-green-500/50">Contact</a>
+            <a href="" class="hover:text-orange-500/50">Privacy</a>
+        </div>
+
+        <div class="flex gap-10 ">
+            <img src="/images/facebook (2).png" alt="" class="h-10 cursor-pointer">
+            <img src="/images/instagram (2).png" alt="" class="h-10 cursor-pointer">
+            <img src="/images/whatsapp.png" alt="" class="h-10 cursor-pointer">
+        </div>
+
+        <div>
+            <p class="text-xl text-gray-700">
+               © Pulsefit 2026
+            </p>
+        </div>
+
+
+    </footer>
+
+
+
+  </body>
+</html>
